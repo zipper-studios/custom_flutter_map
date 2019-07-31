@@ -1,16 +1,10 @@
-# custom_map
+# flutter_map: display a custom popup when the marker is tapped 
 
-A new Flutter application.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+This project uses the [flutter_map](https://pub.dev/packages/flutter_map) package to integrate a map and attach a custom popup to a specific marker when it is tapped.
+Adding a specific marker on a FlutterMap generated some issues for many developers. [Here](https://github.com/johnpryan/flutter_map/issues/354) you can find more details. 
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Read the  [Flutter_map: custom popup above the marker](https://medium.com/p/732d26ef9bc7/edit) article on Medium for a detailed documentation. 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
