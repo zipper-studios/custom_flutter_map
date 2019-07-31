@@ -34,7 +34,7 @@ class HomeScreenState extends State<HomeScreen> {
   LatLng _center = LatLng(40.762681, -73.832611);
 
   FlutterMap _buildMap() {
-    return  FlutterMap(
+    return FlutterMap(
         options: new MapOptions(
           minZoom: 15.0,
           center: _center,
@@ -43,11 +43,11 @@ class HomeScreenState extends State<HomeScreen> {
         layers: [
           new TileLayerOptions(
               urlTemplate:
-              'PASTE YOUR INTEGRATION URL HERE',
+                  "https://api.mapbox.com/styles/v1/loredana/cjwhjt50d005k1dplt10c8e5r/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibG9yZWRhbmEiLCJhIjoiY2p1dXk3ZHl4MG53OTN5bWhxZjYxYzJodSJ9.TyqzGK0TjNAIDF6B5FwNyA",
               additionalOptions: {
                 'accessToken':
-                'PASTE YOUR ACCESS TOKEN HERE',
-                'id': 'PASTE YOUR MAPBOX ID HERE'
+                    'pk.eyJ1IjoibG9yZWRhbmEiLCJhIjoiY2p1dXk3ZHl4MG53OTN5bWhxZjYxYzJodSJ9.TyqzGK0TjNAIDF6B5FwNyA',
+                'id': 'mapbox.mapbox-streets-v8'
               }),
           new MarkerLayerOptions(markers: _buildMarkersOnMap()),
         ]);

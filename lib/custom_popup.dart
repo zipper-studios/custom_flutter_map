@@ -73,7 +73,9 @@ class CustomPopupState extends State<CustomPopup> {
           FutureBuilder(
             future: _initializeVideoPlayerFuture,
             builder: (context, snapshot) {
-              return snapshot.connectionState == ConnectionState.done ? VideoPlayer(controller) : Center(child: CircularProgressIndicator());
+              return snapshot.connectionState == ConnectionState.done
+                  ? VideoPlayer(controller)
+                  : Center(child: CircularProgressIndicator());
             },
           ),
           GestureDetector(
@@ -91,7 +93,8 @@ class CustomPopupState extends State<CustomPopup> {
             child: Stack(
               children: <Widget>[
                 Center(
-                  child: Image.asset('assets/images/ic_blurred_gray_circle.png'),
+                  child:
+                      Image.asset('assets/images/ic_blurred_gray_circle.png'),
                 ),
                 Center(
                   child: Container(
@@ -133,7 +136,6 @@ class CustomPopupState extends State<CustomPopup> {
             Row(
               children: <Widget>[
                 Expanded(child: Text('Johnatan Lawrence')),
-                Image.asset('assets/ic_crown_light_gray.png'),
                 Text('1')
               ],
             ),

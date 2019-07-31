@@ -46,7 +46,6 @@ flutter:
   assets:
     - assets/images/ic_marker.png
     - assets/images/ic_info_window.png
-    - assets/images/ic_crown_light_gray.png
     - assets/images/ic_blurred_gray_circle.png
     - assets/video/bike_acrobatics.mp4
 
